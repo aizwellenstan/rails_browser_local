@@ -1,3 +1,5 @@
 class ApplicationController < ActionController::Base
-    response.headers['X-Frame-Options'] = 'ALLOWALL'
+    def index
+        response.headers['X-Frame-Options'] = 'ALLOWALL'
+    end
 end
